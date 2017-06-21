@@ -1,0 +1,20 @@
+#spring.rabbitmq.host=localhost
+
+
+
+spring:
+  application:
+    name: myproducer
+  cloud:
+    stream:
+      bindings:
+        producer:
+          destination: mychannel
+        output:
+          destination: mychannel
+            
+ 
+server:
+  port: 8000	
+
+app:
